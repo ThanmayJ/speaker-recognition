@@ -11,6 +11,13 @@ The following is the project workflow:
 4. Dataset Training
 5. User Matching
 
+**Data**
+* The speaker data was taken from the [CSTR VCTK Corpus](https://datashare.ed.ac.uk/handle/10283/3443)
+* 8 speakers were taken from the entire dataset of 110 speakers 
+* Each speaker says the sentence "Please Call Stella" (first sentence from the corpus)
+* For each speaker, the `mic1` recordings were taken as train data and `mic2` recordings were taken as test data
+* The `.flac` files were pre-processed to single-channel `.wav` files sampled at a frequency of 11025 Hz
+
 **Compatibility**
 
 This code has been developed and tested well in Windows with Jupter Notebook (Python) on Visual Studio Code.
@@ -22,7 +29,7 @@ This code has been developed and tested well in Windows with Jupter Notebook (Py
 
 ### Results
 
-On a database size of 8 speakers, both the LPC and MFCC algorithms have observed 100% accuracy. 
+On a database size of 8 speakers , both the LPC and MFCC algorithms have observed 100% accuracy. 
 
 **References**
 - LPC [literature](http://practicalcryptography.com/miscellaneous/machine-learning/linear-prediction-tutorial/)
